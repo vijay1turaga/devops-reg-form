@@ -6,6 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template('register.html', username="", email="", phone="", message=None, message_type="")
 
+
 @app.route('/register', methods=['POST'])
 def register():
     username = request.form['username']
